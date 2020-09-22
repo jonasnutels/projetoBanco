@@ -16,7 +16,7 @@ public class Conta implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 
 	@NotNull
@@ -29,9 +29,6 @@ public class Conta implements Serializable{
 	@Min(11)
 	@Max(11)
 	private String cpf;
-
-
-
 	@NotNull
 	private double saldo;
 
